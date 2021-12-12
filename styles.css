@@ -1,0 +1,345 @@
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url(./fonts/SpaceGrotesk-bold.ttf) format("truetype");
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes div-expand {
+    from {
+        height: 0%;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+#introText  {
+    width:70%;
+    margin-left: 15%;
+    font-size: 16px;
+}
+
+#alertBox {
+    height:0%;
+    float:left;
+    content-visibility: hidden;
+}
+
+#alertImg {
+    width:3%;
+    margin:2%;
+    float:left;
+}
+
+#alertText {
+    width:80%;
+    margin-top: 2%;
+    float:left;
+}
+
+.--active {
+    content-visibility: visible !important;
+    border-style: dashed;
+    border-radius: 20px;
+    border-width: 2px;
+    height: 100% !important;
+    width:75% !important;
+    transition: height 0.5s !important;
+    text-align: left;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#navBar {
+    background-color: #cccccc;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 1px 3px;
+}
+
+.navButton {
+    background-color: #cccccc;
+    color: #888888;
+    text-align: center;
+    align-self: center;
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 30px;
+    height: 50%;
+    width: 15%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 50px;
+    float: left;
+    cursor:pointer;
+}
+
+.navButton:hover {
+    filter: brightness(90%);
+}
+
+.navButton:active {
+    filter: brightness(80%);
+}
+
+#logoSpace {
+    height:100%;
+    width:20%;
+    float:left;
+}
+
+#logoContent{
+    width:100%;
+    height:100%;
+    float:left;
+    line-height: 30px;
+    font-size:16px;
+    text-align:center;
+}
+
+body {
+    background-color: #eeeeee;
+    background-repeat: no-repeat;
+    height:auto;
+    max-width:1000px;
+    min-width: 600px;
+    margin:auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.break hr {
+    width:5%;
+    height:90%;
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 50px;
+    margin:0px;
+    padding:0px;
+}
+
+.break {
+    width:calc(100% + 10px);
+    padding-left: calc(50% - 2.5%);
+    padding-right: calc(50% - 2.5%);
+    float:left;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.submitAlert {
+    width:100%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.submitButton {
+    background-color: #2559a8; /* Green */
+    border: none;
+    color: white;
+    padding-top: 14px;
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    float:right;
+    filter:brightness(100%);
+}
+
+.submitButton--loading .button__text {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.submitButton--loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+  
+
+.submitButton:hover {
+    filter:brightness(95%);
+    cursor:pointer;
+}
+
+.submitButton:active {
+    filter:brightness(80%);
+}
+
+.customForm {
+    margin-top:50px;
+    width: 100%;
+    height:200px;
+}
+
+.formText {
+    height:100%;
+    width:30%;
+    float:left;
+    text-align: left;
+}
+
+.formInput {
+    height:100%;
+    width:70%;
+    float:left;
+}
+
+.formUsername {
+    height:30%;
+    width:100%;
+}
+
+.formFeedback {
+    height:70%;
+    width:100%;
+}
+
+#usernameText {
+    width:90%;
+    margin-left:5%;
+}
+
+#feedbackTextArea {
+    width:90%;
+    height:90%;
+    margin-left:5%;
+    resize:none;
+}
+
+.asteriskRequired {
+    color:red;
+}
+
+.content {
+    padding: 10px;
+    text-align: center;
+    text-justify: auto;
+}
+
+.hyperlink {
+    color:blue;
+}
+
+.hyperlink:hover {
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+#aboutContent {
+    max-width: 100%;
+}
+
+#aboutImage {
+    width:20%;
+    float:left;
+    border-radius:50%;
+    /* margin:30px; */
+    margin-left: calc(50% - 10%);
+    margin-right: calc(50% - 10%);
+    border-color: black;
+    border-style: solid;
+}
+
+#aboutText {
+    float:left;
+}
+
+.contactButton {
+    float:left;
+    margin:5%;
+    max-width: 15%;
+    text-align: center;
+    cursor:pointer;
+}
+
+.contactButton:hover {
+    filter:brightness(85%);
+}
+
+.projectDiv {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    box-shadow: 0px 1px 5px;
+    cursor:pointer;
+}
+
+.projectDiv:hover {
+    filter:brightness(70%);
+}
+
+.projectDivImage {
+    width: 90px;
+    padding:5px;
+    float:left;
+}
+
+.projectDivContent {
+    width: calc(100% - 110px);
+    height:100%;
+    max-height:100%;
+    float:left;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.projectDivTitle {
+    height:30%;
+    width:100%;
+    font-size: 24px;
+    color:#444444;
+}
+
+.projectDivBody {
+    height:60%;
+    width:100%;
+    box-sizing:border-box;
+    color:#888888;
+    
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
+html {
+    font-family: "SpaceGrotesk";
+    color:black;
+    user-select:none;
+    font-size: 16px;
+}
+
+p { 
+    margin: 0;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }

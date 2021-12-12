@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dylan Bowler's Website Portfolio</title>
+        <link rel="stylesheet" href="./styles.css" type="text/css"></link>
+        <script src="./scripts/jquery.js" type="text/javascript"></script>
+        <script src="./scripts/feedback.js" type="text/javascript"></script>
+    </head>
+
+    <header>
+        <div id="navBar">
+            <div id="logoSpace">
+                <p id="logoContent">Dylan-Bowler</p>
+            </div>
+            <a href="./index.html"><div class="navButton">Home</div></a>
+            <a href="./portfolio.html"><div class="navButton">Portfolio</div></a>
+            <a href="./about.html"><div class="navButton">About</div></a>
+            <a href="./contact.html"><div class="navButton">Contact</div></a>
+        </div>
+    </header>
+    <body>
+        <div class="content">
+            <h1>Feedback Submission Form</h1>
+            <div class="customForm">
+                <div class="formText">
+                    <div class="formUsername">
+                        Name/Email: 
+                    </div>
+                    <div class="formFeedback">
+                        Feedback <span class="asteriskRequired">*</span>:
+                    </div>
+                </div>
+                <div class="formInput">
+                    <div class="formUsername">
+                        <input id="usernameText" type="text" />
+                    </div>
+                    <div class="formFeedback">
+                        <textarea id="feedbackTextArea" name="Text1" cols="40" rows="5" required></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="submitAlert">
+                <div class="alertBox" id="alertBox">
+                    <img id="alertImg"></img>
+                    <p id="alertText"></p>
+                </div>
+                <div id="submitButton" class="submitButton">
+                    <span class="button__text">Submit feedback</span>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer></footer>
+</html>
