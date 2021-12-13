@@ -1,6 +1,6 @@
 @font-face {
     font-family: "SpaceGrotesk";
-    src: url(./fonts/SpaceGrotesk-bold.ttf) format("truetype");
+    src: url(./fonts/SpaceGrotesk-Bold.ttf) format("truetype");
 }
 
 @keyframes button-loading-spinner {
