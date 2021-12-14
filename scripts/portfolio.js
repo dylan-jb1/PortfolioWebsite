@@ -66,6 +66,24 @@ function jsonLoaded(json) {
         projectContainer.appendChild(projectImgDiv);
         projectContainer.appendChild(projectDivContent);
 
+        var expandedContent = document.createElement("div");
+        expandedContent.classList = "projectDivExpandedContent";
+
+        expandedContent.insertAdjacentHTML( 'beforeend', json[i].contentHTML );
+
+        projectContainer.addEventListener("click", function() {
+            if (this.children[2].classList[1] == "expanded")
+            {
+                this.children[2].classList = "projectDivExpandedContent";
+            }
+            else
+            {
+                this.children[2].classList = this.children[2].classList + " expanded";
+            }
+        });
+
+        projectContainer.appendChild(expandedContent);
+
         contentElement[0].appendChild(projectContainer);
     }
 }           

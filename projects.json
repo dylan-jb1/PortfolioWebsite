@@ -2,7 +2,8 @@
     {
         "title": "Portfolio Website",
         "body": "This project is the website in which you are currently using. Used to demonstrate my programming ability and provide ways to contact me.",
-        "imgUrl": "./imgs/htmlLogo.png"   
+        "imgUrl": "./imgs/htmlLogo.png",
+        "contentHTML": "<h1>All About Me</h1>            <img src='imgs/me.png' id='aboutImage' />            <div class='break'>                <hr>            </div>            <h3>What Am I Doing?</h3>            <p id='aboutText'>I am a aspiring full stack developer currently residing on the Gold Coast, Australia. I am currently studying Computer Science at Griffith University and am set to graduate in August of 2022.</br></br>My current field-related work experience is limited as it stands, but I am always looking for opportunities to expand my network within the field and my technical abilities. I am currently working an internship at IBM Gold Coast, which is set to run for 3 months.</p>            <div class='break'>                <hr>            </div>            <h3>What are my plans?</h3>"  
     },
     {
         "title": "This is a project title",
